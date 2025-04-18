@@ -18,8 +18,8 @@ import numpy as np
 # from PIL import Image
 
 
-st.set_page_config(page_title="ND_FA_Biostatistique", page_icon="🎢", layout="centered")
-st.sidebar.success("Selectionnez une page")
+st.set_page_config(page_title="NDAO_BA", page_icon="🎢", layout="centered")
+# st.sidebar.success("Selectionnez une page")
 
 
 # Definition de la fonction principale
