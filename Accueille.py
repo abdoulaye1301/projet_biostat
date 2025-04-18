@@ -87,9 +87,6 @@ def main():
 
             shap_df = pd.DataFrame({"Feature": X_test.columns, "SHAP Score": shap_df})
             st.write(shap_df)
-            sh.plots.waterfall(shap_df["SHAP Score"], show=False)
-            fig = plt.gcf()
-            st.pyplot(fig)
 
     # Performance du modele
     perf_graphe = st.sidebar.multiselect(
