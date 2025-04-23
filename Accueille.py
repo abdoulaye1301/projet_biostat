@@ -70,9 +70,9 @@ def main():
 
         if "Courbe de ROC" in graphes:
             st.subheader("Courbe de ROC")
-            # fig, ax = plt.subplots()
-            RocCurveDisplay.from_estimator(clf, X_test, Y_test)
-            st.pyplot()
+            fig, ax = plt.subplots()
+            RocCurveDisplay.from_estimator(clf, X_test, Y_test, ax=ax)
+            st.pyplot(fig)
 
         if "SHAP" in graphes:
 
