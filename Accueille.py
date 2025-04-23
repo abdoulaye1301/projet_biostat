@@ -24,8 +24,8 @@ st.set_page_config(page_title="NDBASY", page_icon="🎢", layout="centered")
 
 # Definition de la fonction principale
 def main():
-    st.subheader(
-        "Prédiction du décès chez patient traité et suivie pour cancer de l'estomac"
+    st.markdown(
+        "**Prédiction du décès chez patient traité et suivie pour cancer de l'estomac**"
     )
     df = pd.read_excel("ccc.xlsx")
     seed = 0
@@ -69,7 +69,7 @@ def main():
             st.pyplot()
 
         if "Courbe de ROC" in graphes:
-            st.subheader("Courbe de ROC")
+            st.markdown("**Courbe de ROC**")
             fig, ax = plt.subplots()
             RocCurveDisplay.from_estimator(clf, X_test, Y_test, ax=ax)
             st.pyplot(fig)
